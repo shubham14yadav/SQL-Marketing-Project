@@ -32,7 +32,5 @@ This project demonstrates the use of SQL for insightful data analysis within a m
 <br>9. Web Activity Analysis: Analyzed the frequency of web visits in the last month.<br>
 <br>SELECT AVG(NumWebVisitsMonth) FROM marketing_campaign;<br>
 
-<br>Technologies Used: SQL.<br>
-
 <b>Project Outcome:</b><br> The project yielded valuable insights into customer profiles, purchasing trends, and campaign performances, aiding in informed marketing decisions.<br>
 
