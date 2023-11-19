@@ -1,6 +1,4 @@
-# SQL-Marketing-Project
-
-<b>SQL Analysis of Marketing Campaign Data</b>
+# SQL Analysis of Marketing Campaign Data
 
 <br><b>Description:</b><br>
 This project demonstrates the use of SQL for insightful data analysis within a marketing context. By creating a marketing database and utilizing various SQL queries, the project delves into the analysis of a marketing campaign dataset, focusing on customer demographics, purchasing behavior, and campaign effectiveness.
