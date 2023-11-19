@@ -1,1 +1,40 @@
 # SQL-Marketing-Project
+
+<b>SQL Analysis of Marketing Campaign Data</b>
+
+<br><b>Description:</b><br>
+This project demonstrates the use of SQL for insightful data analysis within a marketing context. By creating a marketing database and utilizing various SQL queries, the project delves into the analysis of a marketing campaign dataset, focusing on customer demographics, purchasing behavior, and campaign effectiveness.
+
+<br><b>Key Features and SQL Commands:</b><br>
+
+<br>Database Setup: Created a database named 'marketing' and a table 'marketing_campaign'.<br>
+
+<br>CREATE DATABASE marketing; USE marketing;<br>
+<br>Data Exploration: Used SELECT and DESCRIBE statements for initial data exploration.<br>
+
+<br>SELECT * FROM marketing_campaign; DESCRIBE marketing_campaign;<br>
+<br>Income and Education Analysis: Analyzed average income by education level.<br>
+
+<br>SELECT Education, ROUND(AVG(Income),0) AS Average_Income FROM marketing_campaign GROUP BY Education;<br>
+<br>Campaign Performance by Education: Evaluated the effectiveness of marketing campaigns across different educational backgrounds.<br>
+
+<br>SELECT Education, SUM(AcceptedCmp1) AS Campaign_1 FROM marketing_campaign GROUP BY Education;<br>
+<br>Purchasing Behavior by Marital Status: Investigated customer purchasing patterns across marital statuses.<br>
+
+<br>SELECT Marital_Status, SUM(NumCatalogPurchases), SUM(NumStorePurchases) FROM marketing_campaign GROUP BY Marital_Status;<br>
+<br>Age Analysis: Added and calculated a new 'Age' column, then analyzed purchasing behavior by age.<br>
+
+<br>ALTER TABLE marketing_campaign ADD COLUMN Age INT; UPDATE marketing_campaign SET Age = YEAR(NOW()) - Year_Birth;<br>
+<br>Customer Engagement Duration: Calculated the duration of customer engagement with the company.<br>
+
+<br>SELECT (YEAR(Dt_Customer) - Year_Birth) AS Customers_in_years FROM marketing_campaign;<br>
+<br>Multi-Channel Purchase Analysis: Examined purchases made through different channels.<br>
+
+<br>SELECT AVG(NumDealsPurchases), AVG(NumWebPurchases) FROM marketing_campaign;<br>
+<br>Web Activity Analysis: Analyzed the frequency of web visits in the last month.<br>
+
+<br>SELECT AVG(NumWebVisitsMonth) FROM marketing_campaign;<br>
+<br>Technologies Used: SQL.<br>
+
+Project Outcome: The project yielded valuable insights into customer profiles, purchasing trends, and campaign performances, aiding in informed marketing decisions.
+
